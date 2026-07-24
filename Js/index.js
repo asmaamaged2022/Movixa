@@ -21,7 +21,7 @@ let SwiperContent1 = document.querySelector(".mySwiper1 .swiper-wrapper"),
 
 //* Latest swiper && Data
 (function () {
-  fetch("../Data/latest.json")
+  fetch("https://asmaamaged2022.github.io/MovixaAPI/latest.json")
     .then((response) => response.json())
     .then((data) => {
       let latest = data.Latest;
@@ -61,7 +61,7 @@ let SwiperContent1 = document.querySelector(".mySwiper1 .swiper-wrapper"),
 
 //* Top10 swiper && Data
 (function () {
-  fetch("../Data/top10.json")
+  fetch("https://asmaamaged2022.github.io/MovixaAPI/top10.json")
     .then((response) => response.json())
     .then((data) => {
       let top10 = data.Top10;
@@ -101,7 +101,7 @@ let SwiperContent1 = document.querySelector(".mySwiper1 .swiper-wrapper"),
 
 //* allMoviesData
 (function () {
-  fetch("../Data/movies_All.json")
+  fetch("https://asmaamaged2022.github.io/MovixaAPI/movies_All.json")
     .then((response) => response.json())
     .then((data) => {
       allMovies = data.AllMovies;
@@ -117,7 +117,7 @@ let SwiperContent1 = document.querySelector(".mySwiper1 .swiper-wrapper"),
 
 //* AdventureData
 (function () {
-  fetch("../Data/adventure.json")
+  fetch("https://asmaamaged2022.github.io/MovixaAPI/adventure.json")
     .then((response) => response.json())
     .then((data) => {
       Adventure = data.Adventure;
@@ -132,7 +132,7 @@ let SwiperContent1 = document.querySelector(".mySwiper1 .swiper-wrapper"),
 
 //* comedyData
 (function () {
-  fetch("../Data/comedy.json")
+  fetch("https://asmaamaged2022.github.io/MovixaAPI/comedy.json")
     .then((response) => response.json())
     .then((data) => {
       Comedy = data.Comedy;
@@ -147,7 +147,7 @@ let SwiperContent1 = document.querySelector(".mySwiper1 .swiper-wrapper"),
 
 //* kidsData
 (function () {
-  fetch("../Data/kides.json")
+  fetch("https://asmaamaged2022.github.io/MovixaAPI/kides.json")
     .then((response) => response.json())
     .then((data) => {
       Kids = data.Kids;
@@ -162,7 +162,7 @@ let SwiperContent1 = document.querySelector(".mySwiper1 .swiper-wrapper"),
 
 //* familyData
 (function () {
-  fetch("../Data/family.json")
+  fetch("https://asmaamaged2022.github.io/MovixaAPI/family.json")
     .then((response) => response.json())
     .then((data) => {
       Family = data.Family;
