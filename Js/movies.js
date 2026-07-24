@@ -1,7 +1,7 @@
 let moviePage = document.querySelector(".MoviePage"),
   id = localStorage.getItem("movieId");
 
-fetch("https://asmaamaged2022.github.io/MovixaAPI/Movies_All.json")
+fetch("https://asmaamaged2022.github.io/MovixaAPI/movies_All.json")
   .then((res) => res.json())
   .then((data) => {
     let movie = data.AllMovies.find((item) => item.id == id);
