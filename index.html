@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="images/x-icon" href="images/logo.png" />
+    <title>Movixa</title>
+    <link rel="stylesheet" href="Css/plugins/bootstrap.css" />
+    <link rel="stylesheet" href="Css/plugins/all.min.css" />
+    <link rel="stylesheet" href="Css/plugins/swiper.css" />
+    <link rel="stylesheet" href="Css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container mt-2 mx-auto">
+        <a class="navbar-brand ms-3" href="#">Movixa</a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="collapse navbar-collapse links" id="navbarSupportedContent">
+          <ul class="navbar-nav flex-grow-1 justify-content-center mb-lg-0">
+            <li class="nav-item me-2">
+              <a class="nav-link mainColor" href="#">Home</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link mainColor" href="#Latest">Latest</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link mainColor" href="#Top10">Top10</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link mainColor" href="#Categories">Categories</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link mainColor" href="#About_Us">About Us</a>
+            </li>
+          </ul>
+          <div class="icons me-4 mb-lg-0 mb-3">
+            <span class="me-3"> <i class="fa-solid fa-magnifying-glass" onclick="openPopup('Search')"></i></span>
+            <span class="me-3"><i class="fa-solid fa-user"></i></span>
+            <span><i class="fa-solid fa-envelope" onclick="openPopup('contact')"></i></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header id="home" class="position-relative">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="7000">
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <div class="image w-100 h-100"></div>
+          </div>
+          <div class="carousel-item h-100">
+            <div class="image w-100 h-100"></div>
+          </div>
+          <div class="carousel-item h-100">
+            <div class="image w-100 h-100"></div>
+          </div>
+          <div class="carousel-item h-100">
+            <div class="image w-100 h-100"></div>
+          </div>
+        </div>
+      </div>
+      <div class="layout h-100 w-100 position-absolute top-0 start-0 z-3">
+        <div class="container h-100 d-flex justify-content-start align-items-center">
+          <div class="content">
+            <div class="text mb-3">
+              <div class="title mb-3">Movixa</div>
+              <div class="discretion">
+                Discover a magical collection of animated movies for kids and families. Explore timeless classics, exciting adventures, and
+                the latest releases—all in one place.
+              </div>
+            </div>
+            <a href="#Categories" class="mainbtn me-auto py-1 px-3"
+              ><span class="me-2">Explore Movies</span><img src="./Icon/film-tape(1).gif" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <i class="fa-solid fa-angles-down fa-fade mainColor"></i>
+    </header>
+    <section id="Latest" class="py-4">
+      <div class="header d-flex justify-content-center align-items-center mb-5 mt-3">
+        <img src="./Icon/film-tape(1).gif" alt="" />
+        <span class="mx-3">Latest</span>
+        <img src="./Icon/film-tape(1).gif" alt="" />
+      </div>
+      <div class="content">
+        <div class="swiper mySwiper1">
+          <div class="swiper-wrapper"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+    <section id="Top10" class="py-4">
+      <div class="header d-flex justify-content-center align-items-center mb-5 mt-3">
+        <img src="./Icon/film-tape(1).gif" alt="" />
+        <span class="mx-3">Top 10</span>
+        <img src="./Icon/film-tape(1).gif" alt="" />
+      </div>
+      <div class="content">
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+    <section id="Categories" class="py-4">
+      <div class="container">
+        <div class="header d-flex justify-content-center align-items-center mb-5 mt-3">
+          <img src="./Icon/film-tape(1).gif" alt="" />
+          <span class="mx-3">Categories</span>
+          <img src="./Icon/film-tape(1).gif" alt="" />
+        </div>
+        <div class="content">
+          <ul class="nav nav-tabs mb-5">
+            <li class="nav-item me-2">
+              <button
+                class="nav-link active"
+                data-type="All"
+                id="All-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#All-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="All-tab-pane"
+                aria-selected="true"
+              >
+                All Movies
+              </button>
+            </li>
+            <li class="nav-item me-2">
+              <button
+                class="nav-link"
+                id="Comedy-tab"
+                data-type="Comedy"
+                data-bs-toggle="tab"
+                data-bs-target="#Comedy-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="Comedy-tab-pane"
+                aria-selected="false"
+              >
+                Comedy
+              </button>
+            </li>
+            <li class="nav-item me-2">
+              <button
+                class="nav-link"
+                id="Family-tab"
+                data-type="Family"
+                data-bs-toggle="tab"
+                data-bs-target="#Family-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="Family-tab-pane"
+                aria-selected="false"
+              >
+                Family
+              </button>
+            </li>
+            <li class="nav-item me-2">
+              <button
+                class="nav-link"
+                id="kids-tab"
+                data-type="Kids"
+                data-bs-toggle="tab"
+                data-bs-target="#kids-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="kids-tab-pane"
+                aria-selected="false"
+              >
+                Kids
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                id="Adventure-tab"
+                data-type="Adventure"
+                data-bs-toggle="tab"
+                data-bs-target="#Adventure-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="Adventure-tab-pane"
+                aria-selected="false"
+              >
+                Adventure
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane allMovies fade show active" id="All-tab-pane">
+              <div class="row my-4 box"></div>
+            </div>
+            <div class="tab-pane comedy fade" id="Comedy-tab-pane">
+              <div class="row my-4 box"></div>
+            </div>
+            <div class="tab-pane family fade" id="Family-tab-pane">
+              <div class="row my-4 box"></div>
+            </div>
+            <div class="tab-pane kids fade" id="kids-tab-pane">
+              <div class="row my-4 box"></div>
+            </div>
+            <div class="tab-pane adventure fade" id="Adventure-tab-pane">
+              <div class="row my-4 box"></div>
+            </div>
+            <button class="mainbtn py-1 px-4 mx-auto" onclick="openPopup('category')">
+              <span class="me-2">See More</span>
+              <img src="./Icon/plus.gif" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="About_Us" class="py-5">
+      <div class="container">
+        <div class="header d-flex justify-content-center align-items-center mb-5 mt-3">
+          <img src="./Icon/film-tape(1).gif" alt="" />
+          <span class="mx-3">About Us</span>
+          <img src="./Icon/film-tape(1).gif" alt="" />
+        </div>
+        <div class="content pb-5 pt-3 text-center mx-auto">
+          Welcome to Movixa! We're more than just a movie website—we're a place where stories come to life. Our goal is to spread happiness,
+          inspire imagination, and create unforgettable movie moments for everyone. Every click is the start of a new adventure, and every
+          movie is a chance to smile.
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="bg-black text-center py-2 mb-0">&copy;2026 Movixa. All Rights Reserved.</p>
+    </footer>
+    <div class="popup w-100 d-none" data-type="category" onclick="closePopup()">
+      <div class="box mx-auto">
+        <div class="header d-flex justify-content-center align-items-center mb-5 mt-3">
+          <img src="./Icon/film-tape(1).gif" alt="" />
+          <span class="mx-3">Categories</span>
+          <img src="./Icon/film-tape(1).gif" alt="" />
+          <i class="fa-solid fa-xmark fa-beat" onclick="closePopup()"></i>
+        </div>
+        <div class="content">
+          <div class="container">
+            <div class="row"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup w-100 d-none" data-type="Search" onclick="closePopup()">
+      <div class="box mx-auto">
+        <div class="header d-flex justify-content-center align-items-center mb-5 mt-3">
+          <img src="./Icon/film-tape(1).gif" alt="" />
+          <span class="mx-3">Search</span>
+          <img src="./Icon/film-tape(1).gif" alt="" />
+          <i class="fa-solid fa-xmark fa-beat" onclick="closePopup()"></i>
+        </div>
+        <div class="content">
+          <div class="container">
+            <input type="text" class="w-100 p-3" id="search" name="search" placeholder="search by Movie Name * " />
+            <div class="row mt-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup w-100 d-none" data-type="contact" onclick="closePopup()">
+      <div class="box mx-auto">
+        <div class="content">
+          <div class="container">
+            <div class="contact-box text-center py-4 px-2">
+              <h2 class="mb-5">Contact Us</h2>
+              <form class="w-100">
+                <div class="mb-3">
+                  <input type="text"  class="form-control p-2" placeholder="Your Name" />
+                </div>
+
+                <div class="mb-3">
+                  <input type="email"  class="form-control p-2" placeholder="Your Email" />
+                </div>
+
+                <div class="mb-4">
+                  <textarea  class="form-control p-2" rows="6" placeholder="Your Message"></textarea>
+                </div>
+
+                <button class="mainbtn px-3 py-1 mx-auto">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Js/plugins/bootstrap.js"></script>
+    <script src="Js/plugins/swiper.js"></script>
+    <script src="Js/index.js"></script>
+    <script src="Js/function.js"></script>
+  </body>
+</html>

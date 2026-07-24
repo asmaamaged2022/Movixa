@@ -1,0 +1,7 @@
+apisgradproject.runasp.net/api/movies_all
+apisgradproject.runasp.net/api/Adventure
+apisgradproject.runasp.net/api/Comedy
+apisgradproject.runasp.net/api/Family
+apisgradproject.runasp.net/api/Latest
+apisgradproject.runasp.net/api/Kids
+apisgradproject.runasp.net/api/Top10

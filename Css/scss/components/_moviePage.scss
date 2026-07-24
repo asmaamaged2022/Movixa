@@ -1,0 +1,77 @@
+@use "../abstracts/index" as *;
+.MoviePage {
+  .image {
+    position: relative;
+    &::after {
+      @include createEle($h: 100%);
+      @include position($t: 0, $l: 0);
+      background: linear-gradient(0deg, #1e2022 0%, transparent 75%);
+    }
+  }
+  .info {
+    display: flex;
+    @include respond(350) {
+      display: block;
+    }
+    @include respond(650) {
+      display: flex;
+    }
+    .poster {
+      img {
+        border-radius: 20px;
+        display: block;
+        overflow: hidden;
+        border: 2px solid $firstColor;
+        width: 200px;
+
+        @include respond(350) {
+          margin-inline: auto;
+        }
+        @include respond(650) {
+          margin-inline: initial;
+        }
+      }
+    }
+    .box {
+      position: relative;
+      font-family: "Luckiest Guy", cursive;
+      text-shadow: 0 0 5px #f5f5dc;
+      font-size: 20px;
+
+      .logo {
+        width: 250px;
+      }
+      .name {
+        font-size: 30px;
+        @include flex($justify: start);
+      }
+      .additionalInfo {
+        @include position($b: 0, $l: 0);
+
+        @include respond(350) {
+          position: initial;
+        }
+        @include respond(850) {
+          @include position($b: 0,$l: 0);
+        }
+        i {
+          color: $firstColor;
+        }
+        .info {
+          display: flex;
+        }
+      }
+    }
+  }
+  .description {
+    font-size: 20px;
+    width: 70%;
+    line-height: 1.7;
+    @include respond(350) {
+      width: 100%;
+    }
+    @include respond(650) {
+      width: 80%;
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "Comedy":[
+  {
+    "id": 12,
+    "title": "Madagascar",
+    "description": "Four zoo animals unexpectedly find themselves stranded on a wild island, where hilarious adventures, unlikely friendships, and surprising discoveries change their lives forever together.",
+    "year": "2005",
+    "type": "Comedy",
+    "poster": "madagascar1_poster.webp",
+    "logo": "madagascar1_logo.png",
+    "background": "madagascar1_back.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Madagascar: Escape 2 Africa",
+    "description": "The lovable animal friends continue their exciting journey as they arrive in Africa, facing new adventures, family discoveries, and unforgettable moments that strengthen their remarkable bond.",
+    "year": "2008",
+    "type": "Comedy",
+    "poster": "madagascar2_poster.webp",
+    "logo": "madagascar2_logo.png",
+    "background": "madagascar2_back.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Monsters, Inc.",
+    "description": "Two friendly monsters discover an unexpected friendship with a human child, leading to heartwarming adventures that challenge everything they believe about fear, courage, and kindness.",
+    "year": "2001",
+    "type": "Comedy",
+    "poster": "monsters1_poster.webp",
+    "logo": "monsters1_logo.png",
+    "background": "monsters1_back.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Monsters University",
+    "description": "Before becoming legendary scare partners, two ambitious monsters navigate college life, fierce competition, and unexpected teamwork while learning the true meaning of friendship and success.",
+    "year": "2013",
+    "type": "Comedy",
+    "poster": "monsters2_poster.webp",
+    "logo": "monsters2_logo.png",
+    "background": "monsters2_back.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Kung Fu Panda",
+    "description": "An enthusiastic panda is unexpectedly chosen to become a legendary warrior, beginning an unforgettable adventure filled with courage, determination, friendship, and incredible martial arts battles.",
+    "year": "2008",
+    "type": "Comedy",
+    "poster": "panda1_poster.webp",
+    "logo": "panda1_logo.png",
+    "background": "panda1_back.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Kung Fu Panda 2",
+    "description": "Po continues his heroic journey as a dangerous new enemy threatens the valley, forcing him to uncover hidden truths while protecting everyone he cares about with courage.",
+    "year": "2011",
+    "type": "Comedy",
+    "poster": "panda2_poster.webp",
+    "logo": "panda2_logo.png",
+    "background": "panda2_back.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Kung Fu Panda 3",
+    "description": "Po discovers a long-lost family while preparing to face an unstoppable villain, balancing responsibility, friendship, and courage in a spectacular adventure full of heart and humor.",
+    "year": "2016",
+    "type": "Comedy",
+    "poster": "panda3_poster.webp",
+    "logo": "panda3_logo.png",
+    "background": "panda3_back.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Kung Fu Panda 4",
+    "description": "A fresh adventure begins as Po embraces new responsibilities and faces powerful enemies, discovering that true leadership comes from wisdom, trust, and believing in others around him.",
+    "year": "2024",
+    "type": "Comedy",
+    "poster": "panda4_poster.webp",
+    "logo": "panda4_logo.png",
+    "background": "panda4_back.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Shrek",
+    "description": "A grumpy but lovable ogre sets out on an unforgettable quest that leads to unlikely friendships, magical adventures, and surprising discoveries about love, acceptance, and true happiness.",
+    "year": "2001",
+    "type": "Comedy",
+    "poster": "shrek1_poster.webp",
+    "logo": "shrek1_logo.png",
+    "background": "shrek1_back.jpg"
+  },
+  {
+    "id": 21,
+    "title": "Shrek 2",
+    "description": "Shrek faces hilarious new challenges after meeting his wife's royal family, discovering that love, confidence, and staying true to yourself are the greatest adventures of all.",
+    "year": "2004",
+    "type": "Comedy",
+    "poster": "shrek2_poster.webp",
+    "logo": "shrek2_logo.png",
+    "background": "shrek2_back.jpg"
+  },
+  {
+    "id": 22,
+    "title": "Shrek the Third",
+    "description": "With the kingdom's future uncertain, Shrek embarks on another unforgettable journey where responsibility, friendship, and unexpected heroes create a hilarious and heartwarming adventure together.",
+    "year": "2007",
+    "type": "Comedy",
+    "poster": "shrek3_poster.webp",
+    "logo": "shrek3_logo.png",
+    "background": "shrek3_back.jpg"
+  },
+  {
+    "id": 23,
+    "title": "Shrek Forever After",
+    "description": "Shrek finds himself in a strange alternate reality where everything has changed, leading to an emotional adventure about family, love, and appreciating the life he already has.",
+    "year": "2010",
+    "type": "Comedy",
+    "poster": "shrek4_poster.webp",
+    "logo": "shrek4_logo.png",
+    "background": "shrek4_back.jpg"
+  },
+  {
+    "id": 24,
+    "title": "Zootopia",
+    "description": "A determined rookie rabbit police officer teams up with a clever fox to solve a mysterious case, uncovering unexpected truths while proving that anyone can achieve greatness.",
+    "year": "2016",
+    "type": "Comedy",
+    "poster": "zootopia1_poster.webp",
+    "logo": "zootopia1_logo.png",
+    "background": "zootopia1_back.jpg"
+  },
+  {
+    "id": 25,
+    "title": "Zootopia 2",
+    "description": "Judy Hopps and Nick Wilde return for another exciting investigation, facing fresh mysteries, surprising allies, and thrilling adventures that challenge their teamwork and determination once again.",
+    "year": "2025",
+    "type": "Comedy",
+    "poster": "zootopia2_poster.webp",
+    "logo": "zootopia2_logo.png",
+    "background": "zootopia2_back.jpg"
+  }
+]
+}

@@ -1,0 +1,145 @@
+{
+  "Kids":[
+  {
+    "id": 41,
+    "title": "Cars",
+    "description": "A talented young race car discovers that true success comes through friendship, humility, and helping others while experiencing an unforgettable journey beyond the racetrack and fame.",
+    "year": "2006",
+    "type": "Kids",
+    "poster": "car_poster.webp",
+    "logo": "car_logo.png",
+    "background": "car_back.jpg"
+  },
+  {
+    "id": 42,
+    "title": "Coco",
+    "description": "A music-loving boy enters a magical world filled with unforgettable adventures, discovering the importance of family, memories, and following his dreams with courage and determination.",
+    "year": "2017",
+    "type": "Kids",
+    "poster": "coco_poster.webp",
+    "logo": "coco_logo.png",
+    "background": "coco_back.jpg"
+  },
+  {
+    "id": 43,
+    "title": "Finding Dory",
+    "description": "Dory begins an emotional journey across the ocean to uncover her past, finding friendship, family, and courage while overcoming every challenge that comes her way together.",
+    "year": "2016",
+    "type": "Kids",
+    "poster": "dory_poster.webp",
+    "logo": "dory_logo.png",
+    "background": "dory_back.jpg"
+  },
+  {
+    "id": 44,
+    "title": "The Grinch",
+    "description": "A grumpy but lonely creature plans to steal Christmas, only to discover that kindness, friendship, and the true holiday spirit can transform even the coldest heart.",
+    "year": "2018",
+    "type": "Kids",
+    "poster": "grinch_poster.webp",
+    "logo": "grinch_logo.png",
+    "background": "grinch_back.jpg"
+  },
+  {
+    "id": 45,
+    "title": "Luca",
+    "description": "A curious sea monster explores the beautiful Italian coast with his best friend, discovering freedom, friendship, and the courage to embrace who he truly is every day.",
+    "year": "2021",
+    "type": "Kids",
+    "poster": "luca_poster.webp",
+    "logo": "luca_logo.png",
+    "background": "luca_back.jpg"
+  },
+  {
+    "id": 46,
+    "title": "Minions",
+    "description": "The lovable yellow Minions set out on a hilarious adventure packed with unexpected challenges, unforgettable friendships, and endless laughter while searching for the perfect leader together.",
+    "year": "2015",
+    "type": "Kids",
+    "poster": "minions1_poster.webp",
+    "logo": "minions1_logo.png",
+    "background": "minions1_back.jpg"
+  },
+  {
+    "id": 47,
+    "title": "Minions: The Rise of Gru",
+    "description": "Young Gru joins forces with his loyal Minions in an exciting adventure where bravery, teamwork, and clever ideas help them overcome powerful enemies and impossible situations together.",
+    "year": "2022",
+    "type": "Kids",
+    "poster": "minions2_poster.webp",
+    "logo": "minions2_logo.png",
+    "background": "minions2_back.jpg"
+  },
+  {
+    "id": 48,
+    "title": "Minions 3",
+    "description": "The mischievous Minions return for another action-packed adventure filled with laughter, surprising friendships, daring missions, and unforgettable moments that keep everyone smiling from start to finish.",
+    "year": "2026",
+    "type": "Kids",
+    "poster": "minions3_poster.webp",
+    "logo": "minions3_logo.png",
+    "background": "minions3_back.jpg"
+  },
+  {
+    "id": 49,
+    "title": "Finding Nemo",
+    "description": "A devoted father crosses the vast ocean on an unforgettable adventure, discovering courage, friendship, and hope while searching for the son he loves more than anything.",
+    "year": "2003",
+    "type": "Kids",
+    "poster": "nemo_poster.webp",
+    "logo": "nemo_logo.png",
+    "background": "nemo_back.jpg"
+  },
+  {
+    "id": 50,
+    "title": "Puss in Boots",
+    "description": "The fearless and charming Puss in Boots embarks on another legendary adventure filled with daring escapes, clever plans, loyal friends, and unforgettable moments of bravery and humor.",
+    "year": "2011",
+    "type": "Kids",
+    "poster": "pussBoots_poster.webp",
+    "logo": "pussBoots_logo.png",
+    "background": "pussBoots_back.jpg"
+  },
+  {
+    "id": 51,
+    "title": "Toy Story",
+    "description": "A group of beloved toys comes to life whenever humans are away, sharing unforgettable adventures that celebrate friendship, loyalty, courage, and the joy of growing together.",
+    "year": "1995",
+    "type": "Kids",
+    "poster": "toy1_poster.webp",
+    "logo": "toy1_logo.png",
+    "background": "toy1_back.jpg"
+  },
+  {
+    "id": 52,
+    "title": "Toy Story 2",
+    "description": "Woody and his loyal friends set out on another exciting rescue mission, discovering that friendship, trust, and staying together matter more than anything else in life.",
+    "year": "1999",
+    "type": "Kids",
+    "poster": "toy2_poster.webp",
+    "logo": "toy2_logo.png",
+    "background": "toy2_back.jpg"
+  },
+  {
+    "id": 53,
+    "title": "Toy Story 3",
+    "description": "As their owner prepares for a new chapter, the beloved toys face unexpected adventures that strengthen their friendship and remind them of the importance of never giving up.",
+    "year": "2010",
+    "type": "Kids",
+    "poster": "toy3_poster.webp",
+    "logo": "toy3_logo.png",
+    "background": "toy3_back.jpg"
+  },
+  {
+    "id": 54,
+    "title": "Toy Story 4",
+    "description": "Woody begins a heartfelt new adventure that challenges his purpose, leading to unforgettable discoveries about friendship, loyalty, freedom, and embracing the future with confidence and hope.",
+    "year": "2019",
+    "type": "Kids",
+    "poster": "toy4_poster.webp",
+    "logo": "toy4_logo.png",
+    "background": "toy4_back.jpg"
+  }
+]
+}
+

@@ -1,0 +1,72 @@
+@use "../abstracts/index" as *;
+
+.popup {
+  @include position($type: fixed, $t: 0, $l: 0);
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 150;
+  overflow-y: auto;
+  height: 100vh;
+  &[data-type="category"],
+  &[data-type="Search"] {
+    .box {
+      margin-top: 30px;
+    }
+  }
+  .box {
+    width: 90%;
+    border-radius: 20px;
+    border: 1px solid $firstColor;
+    background-color: $sceColor;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-duration: 1s;
+  }
+  &.show {
+    .box {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  &[data-type="Search"],
+  &[data-type="contact"] {
+    input,
+    textarea {
+      color: $firstColor;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      border-bottom: 1px solid $firstColor;
+      &::placeholder {
+        color: $firstColor;
+      }
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-text-fill-color: #f5deb3 !important;
+        -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+        box-shadow: 0 0 0px 1000px transparent inset !important;
+        background-color: transparent !important;
+        transition: background-color 5000s ease-in-out 0s;
+      }
+    }
+  }
+  &[data-type="contact"] {
+    @include flex;
+    
+    .box {
+      width: 320px;
+      form {
+        input,
+        textarea {
+          border: 1px solid $firstColor;
+          resize: none;
+          &:focus{
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}

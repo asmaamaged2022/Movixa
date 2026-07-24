@@ -1,0 +1,94 @@
+@use "../abstracts/index" as *;
+nav {
+  &.navbar {
+    @include position($type: fixed, $t: 0, $l: 0);
+    width: 100%;
+    z-index: 100;
+
+    .container {
+      @include respond(350) {
+        width: 95%;
+        margin: auto;
+      }
+      color: $firstColor;
+      background-color: rgba(0, 0, 0, 0.7);
+      border: 2px solid $firstColor;
+      border-radius: 40px;
+      .navbar-brand {
+        font-family: "Harlow Solid", cursive;
+        font-size: 35px;
+        color: $firstColor;
+        &:hover {
+          color: $firstColor;
+        }
+      }
+      button {
+        background-color: transparent;
+        width: 40px;
+        padding: 5px;
+        height: 35px;
+        outline: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid $firstColor;
+        margin-right: 10px;
+        span {
+          width: 90%;
+          margin: auto;
+          height: 2px;
+          background-color: $firstColor;
+        }
+        &:focus {
+          outline: none;
+          box-shadow: none;
+          border: 1px solid $firstColor;
+        }
+      }
+      ul {
+        @include respond(350) {
+          text-align: center;
+        }
+        li {
+          a {
+            &::after {
+              @include createEle($h: 2px);
+              border-radius: 10px;
+              transition-duration: 0.5s;
+              background-color: $firstColor;
+              transform: translateY(5px) scaleX(0);
+            }
+            &:hover {
+              color: $firstColor;
+              &::after {
+                transform: translateY(5px) scaleX(1);
+              }
+            }
+            @include respond(350) {
+              width: fit-content;
+              margin-inline: auto;
+            }
+          }
+        }
+      }
+      .icons {
+        @include flex;
+        span {
+          @include distance(40px, 40px);
+          background-color: transparent;
+          border-radius: 50%;
+          border: 1px solid $firstColor;
+          @include flex;
+          transition-duration: 0.5s;
+          cursor: pointer;
+          &:hover {
+            color: black;
+            background-color: $firstColor;
+            border: 1px solid black;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,674 @@
+@charset "UTF-8";
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  background-color: #1b1b1b;
+  color: #f5deb3;
+}
+
+.mainbtn {
+  text-decoration: none;
+  color: #f5deb3;
+  background-color: #1b1b1b;
+  border: 2px solid #f5deb3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: fit-content;
+}
+.mainbtn img {
+  width: 40px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fed383;
+  border-radius: 10px;
+}
+
+.mainColor {
+  color: #f5deb3;
+}
+
+.header {
+  text-align: center;
+  position: relative;
+}
+.header span {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 50px;
+}
+@media (max-width: 1300px) {
+  .header span {
+    font-size: 30px;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  .header span {
+    font-size: 40px;
+  }
+}
+.header span {
+  text-shadow: 0 0 5px #f5f5dc;
+}
+.header span::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 50%;
+  margin: auto;
+  background-color: #f5deb3;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #f5f5dc;
+  transform: translateY(5px);
+}
+.header img {
+  width: 80px;
+}
+.header i {
+  position: absolute;
+  top: 10px;
+  left: initial;
+  bottom: initial;
+  right: 30px;
+}
+@media (max-width: 1300px) {
+  .header i {
+    position: absolute;
+    top: 0px;
+    left: initial;
+    bottom: initial;
+    right: 10px;
+  }
+}
+.header i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  color: #f5deb3;
+  padding: 10px;
+  background-color: #1b1b1b;
+  border-radius: 20px;
+  transition-duration: 0.5s;
+  border: 2px solid #1b1b1b;
+}
+.swiper .swiper-button-next:hover,
+.swiper .swiper-button-prev:hover {
+  background-color: #f5deb3;
+  color: #1b1b1b;
+}
+
+.movieCard {
+  background-position: center;
+  background-size: cover;
+  width: 270px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: default;
+  position: relative;
+}
+.movieCard > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition-duration: 1s;
+}
+.movieCard .layout {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: initial;
+  right: initial;
+  opacity: 0;
+  transition-duration: 1s;
+}
+.movieCard .layout .info * {
+  transform: translateY(20px);
+  opacity: 0;
+}
+.movieCard .layout .info {
+  position: absolute;
+  top: initial;
+  left: 0;
+  bottom: 20px;
+  right: initial;
+}
+.movieCard .layout .info .text .name {
+  font-size: 25px;
+  font-family: "Luckiest Guy", cursive;
+}
+.movieCard .layout .info .text {
+  font-size: 20px;
+  text-shadow: 0 0 5px #1b1b1b;
+}
+.movieCard:hover > img {
+  filter: brightness(60%) blur(3px);
+}
+.movieCard:hover .layout {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: initial;
+  right: initial;
+  opacity: 1;
+}
+.movieCard:hover .layout .info * {
+  transition-duration: 1s;
+  transform: translateY(0px);
+  opacity: 1;
+}
+.movieCard:hover .layout .info .name {
+  transition-delay: 0.5s;
+}
+.movieCard:hover .layout .info .year {
+  transition-delay: 0.6s;
+}
+.movieCard:hover .layout .info .category {
+  transition-delay: 0.7s;
+}
+.movieCard:hover .layout .info a {
+  transition-delay: 0.8s;
+}
+
+#About_Us .content {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 25px;
+  text-shadow: 0 0 5px #f5deb3;
+  width: 75%;
+}
+@media (max-width: 1300px) {
+  #About_Us .content {
+    width: 100%;
+  }
+}
+
+header {
+  position: relative;
+  height: 100dvh;
+}
+header .carousel-item {
+  overflow: hidden;
+}
+header .carousel-item .image {
+  transition-duration: 7s;
+  transform: scale(1);
+}
+header .carousel-item.active .image {
+  transform: scale(1.1);
+}
+header .carousel-item:nth-of-type(1) .image {
+  background-image: url("../images/zootopia2_back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1300px) {
+  header .carousel-item:nth-of-type(1) .image {
+    background-image: url("../images/🐰🦊.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  header .carousel-item:nth-of-type(1) .image {
+    background-image: url("../images/zootopia2_back.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+header .carousel-item:nth-of-type(2) .image {
+  background-image: url("../images/dragon2_back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1300px) {
+  header .carousel-item:nth-of-type(2) .image {
+    background-image: url("../images/nemotest.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  header .carousel-item:nth-of-type(2) .image {
+    background-image: url("../images/dragon2_back.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+header .carousel-item:nth-of-type(3) .image {
+  background-image: url("../images/toy1_back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1300px) {
+  header .carousel-item:nth-of-type(3) .image {
+    background-image: url("../images/toytest.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  header .carousel-item:nth-of-type(3) .image {
+    background-image: url("../images/toy1_back.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+header .carousel-item:nth-of-type(4) .image {
+  background-image: url("../images/luca_back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1300px) {
+  header .carousel-item:nth-of-type(4) .image {
+    background-image: url("../images/luca_test.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  header .carousel-item:nth-of-type(4) .image {
+    background-image: url("../images/luca_back.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+header .layout {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+header .layout .content .text {
+  width: 60%;
+}
+@media (max-width: 1300px) {
+  header .layout .content .text {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  header .layout .content .text {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  header .layout .content .text {
+    width: 70%;
+  }
+}
+header .layout .content .text {
+  color: black;
+}
+header .layout .content .text .title {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 85px;
+}
+@media (max-width: 1300px) {
+  header .layout .content .text .title {
+    font-size: 55px;
+  }
+}
+header .layout .content .text .title {
+  text-shadow: 0 0 5px #f5f5dc, 0 0 10px #f5deb3, 0 0 20px #ffe4c4;
+}
+header .layout .content .text .discretion {
+  color: #f5deb3;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 18px;
+}
+header i {
+  position: absolute;
+  top: initial;
+  left: 50%;
+  bottom: 30px;
+  right: initial;
+  transform: translateX(-50%);
+  z-index: 12;
+  font-size: 30px;
+  text-shadow: 0 0 5px black;
+  line-height: 1.5;
+}
+
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: initial;
+  right: initial;
+  width: 100%;
+  z-index: 100;
+}
+@media (max-width: 1300px) {
+  nav.navbar .container {
+    width: 95%;
+    margin: auto;
+  }
+}
+nav.navbar .container {
+  color: #f5deb3;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #f5deb3;
+  border-radius: 40px;
+}
+nav.navbar .container .navbar-brand {
+  font-family: "Harlow Solid", cursive;
+  font-size: 35px;
+  color: #f5deb3;
+}
+nav.navbar .container .navbar-brand:hover {
+  color: #f5deb3;
+}
+nav.navbar .container button {
+  background-color: transparent;
+  width: 40px;
+  padding: 5px;
+  height: 35px;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #f5deb3;
+  margin-right: 10px;
+}
+nav.navbar .container button span {
+  width: 90%;
+  margin: auto;
+  height: 2px;
+  background-color: #f5deb3;
+}
+nav.navbar .container button:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #f5deb3;
+}
+@media (max-width: 1300px) {
+  nav.navbar .container ul {
+    text-align: center;
+  }
+}
+nav.navbar .container ul li a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  background-color: #f5deb3;
+  transform: translateY(5px) scaleX(0);
+}
+nav.navbar .container ul li a:hover {
+  color: #f5deb3;
+}
+nav.navbar .container ul li a:hover::after {
+  transform: translateY(5px) scaleX(1);
+}
+@media (max-width: 1300px) {
+  nav.navbar .container ul li a {
+    width: fit-content;
+    margin-inline: auto;
+  }
+}
+nav.navbar .container .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+nav.navbar .container .icons span {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #f5deb3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+nav.navbar .container .icons span:hover {
+  color: black;
+  background-color: #f5deb3;
+  border: 1px solid black;
+}
+
+#Categories .content ul.nav-tabs {
+  border: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#Categories .content ul.nav-tabs li button {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition-duration: 0.5s;
+}
+#Categories .content ul.nav-tabs li button.active {
+  background-color: #f5deb3;
+  color: #1b1b1b;
+  border: 0px;
+  outline: 0px;
+}
+#Categories .content ul.nav-tabs li button {
+  background-color: transparent;
+  color: #f5deb3;
+  border: none;
+}
+
+.MoviePage .image {
+  position: relative;
+}
+.MoviePage .image::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: initial;
+  right: initial;
+  background: linear-gradient(0deg, #1e2022 0%, transparent 75%);
+}
+.MoviePage .info {
+  display: flex;
+}
+@media (max-width: 1300px) {
+  .MoviePage .info {
+    display: block;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  .MoviePage .info {
+    display: flex;
+  }
+}
+.MoviePage .info .poster img {
+  border-radius: 20px;
+  display: block;
+  overflow: hidden;
+  border: 2px solid #f5deb3;
+  width: 200px;
+}
+@media (max-width: 1300px) {
+  .MoviePage .info .poster img {
+    margin-inline: auto;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  .MoviePage .info .poster img {
+    margin-inline: initial;
+  }
+}
+.MoviePage .info .box {
+  position: relative;
+  font-family: "Luckiest Guy", cursive;
+  text-shadow: 0 0 5px #f5f5dc;
+  font-size: 20px;
+}
+.MoviePage .info .box .logo {
+  width: 250px;
+}
+.MoviePage .info .box .name {
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.MoviePage .info .box .additionalInfo {
+  position: absolute;
+  top: initial;
+  left: 0;
+  bottom: 0;
+  right: initial;
+}
+@media (max-width: 1300px) {
+  .MoviePage .info .box .additionalInfo {
+    position: initial;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  .MoviePage .info .box .additionalInfo {
+    position: absolute;
+    top: initial;
+    left: 0;
+    bottom: 0;
+    right: initial;
+  }
+}
+.MoviePage .info .box .additionalInfo i {
+  color: #f5deb3;
+}
+.MoviePage .info .box .additionalInfo .info {
+  display: flex;
+}
+.MoviePage .description {
+  font-size: 20px;
+  width: 70%;
+  line-height: 1.7;
+}
+@media (max-width: 1300px) {
+  .MoviePage .description {
+    width: 100%;
+  }
+}
+@media (min-width: 577px) and (max-width: 1300px) {
+  .MoviePage .description {
+    width: 80%;
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: initial;
+  right: initial;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 150;
+  overflow-y: auto;
+  height: 100vh;
+}
+.popup[data-type=category] .box, .popup[data-type=Search] .box {
+  margin-top: 30px;
+}
+.popup .box {
+  width: 90%;
+  border-radius: 20px;
+  border: 1px solid #f5deb3;
+  background-color: #1b1b1b;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-duration: 1s;
+}
+.popup.show .box {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.popup[data-type=Search] input,
+.popup[data-type=Search] textarea, .popup[data-type=contact] input,
+.popup[data-type=contact] textarea {
+  color: #f5deb3;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  border-bottom: 1px solid #f5deb3;
+}
+.popup[data-type=Search] input::placeholder,
+.popup[data-type=Search] textarea::placeholder, .popup[data-type=contact] input::placeholder,
+.popup[data-type=contact] textarea::placeholder {
+  color: #f5deb3;
+}
+.popup[data-type=Search] input:-webkit-autofill, .popup[data-type=Search] input:-webkit-autofill:hover, .popup[data-type=Search] input:-webkit-autofill:focus, .popup[data-type=Search] input:-webkit-autofill:active,
+.popup[data-type=Search] textarea:-webkit-autofill,
+.popup[data-type=Search] textarea:-webkit-autofill:hover,
+.popup[data-type=Search] textarea:-webkit-autofill:focus,
+.popup[data-type=Search] textarea:-webkit-autofill:active, .popup[data-type=contact] input:-webkit-autofill, .popup[data-type=contact] input:-webkit-autofill:hover, .popup[data-type=contact] input:-webkit-autofill:focus, .popup[data-type=contact] input:-webkit-autofill:active,
+.popup[data-type=contact] textarea:-webkit-autofill,
+.popup[data-type=contact] textarea:-webkit-autofill:hover,
+.popup[data-type=contact] textarea:-webkit-autofill:focus,
+.popup[data-type=contact] textarea:-webkit-autofill:active {
+  -webkit-text-fill-color: #f5deb3 !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  box-shadow: 0 0 0px 1000px transparent inset !important;
+  background-color: transparent !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.popup[data-type=contact] {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.popup[data-type=contact] .box {
+  width: 320px;
+}
+.popup[data-type=contact] .box form input,
+.popup[data-type=contact] .box form textarea {
+  border: 1px solid #f5deb3;
+  resize: none;
+}
+.popup[data-type=contact] .box form input:focus,
+.popup[data-type=contact] .box form textarea:focus {
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

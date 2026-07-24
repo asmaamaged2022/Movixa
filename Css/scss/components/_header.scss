@@ -1,0 +1,107 @@
+@use "../abstracts/index" as *;
+
+header {
+  position: relative;
+  height: 100dvh;
+  .carousel-item {
+    overflow: hidden;
+    .image {
+      transition-duration: 7s;
+      transform: scale(1);
+    }
+    &.active {
+      .image {
+        transform: scale(1.1);
+      }
+    }
+    &:nth-of-type(1) {
+      .image {
+        @include background("../images/zootopia2_back.jpg");
+        @include respond(350) {
+          @include background("../images/🐰🦊.jpg");
+        }
+        @include respond(850) {
+          @include background("../images/zootopia2_back.jpg");
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      .image {
+        @include background("../images/dragon2_back.jpg");
+        @include respond(350) {
+          @include background("../images/nemotest.jpg");
+        }
+        @include respond(850) {
+          @include background("../images/dragon2_back.jpg");
+        }
+      }
+    }
+    &:nth-of-type(3) {
+      .image {
+        @include background("../images/toy1_back.jpg");
+        @include respond(350) {
+          @include background("../images/toytest.jpg");
+        }
+        @include respond(850) {
+          @include background("../images/toy1_back.jpg");
+        }
+      }
+    }
+    &:nth-of-type(4) {
+      .image {
+        @include background("../images/luca_back.jpg");
+        @include respond(350) {
+          @include background("../images/luca_test.jpg");
+        }
+        @include respond(850) {
+          @include background("../images/luca_back.jpg");
+        }
+      }
+    }
+  }
+  .layout {
+    background-color: rgba(0, 0, 0, 0.2);
+    .content {
+      .text {
+        width: 60%;
+        @include respond(350) {
+          width: 100%;
+        }
+        @include respond(850) {
+           width: 80%;
+        }
+         @include respond(1050) {
+           width: 70%;
+        }
+
+        color: black;
+
+        .title {
+          font-family: "Luckiest Guy", cursive;
+          font-size: 85px;
+          @include respond(350) {
+            font-size: 55px;
+          }
+
+          text-shadow:
+            0 0 5px #f5f5dc,
+            0 0 10px #f5deb3,
+            0 0 20px #ffe4c4;
+        }
+        .discretion {
+          color: $firstColor;
+          text-shadow: 2px 2px 5px #000;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  i {
+    @include position($b: 30px, $l: 50%);
+    transform: translateX(-50%);
+    z-index: 12;
+    font-size: 30px;
+    text-shadow: 0 0 5px black;
+    line-height: 1.5;
+  }
+}

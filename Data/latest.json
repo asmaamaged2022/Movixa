@@ -1,0 +1,105 @@
+{
+  "Latest":[
+  {
+    "id": 2,
+    "title": "The Bad Guys 2",
+    "description": "The reformed crew is pulled into another thrilling adventure where fresh rivals, daring missions, and unexpected twists push their teamwork, courage, and trust to exciting new limits together.",
+    "year": "2025",
+    "type": "Adventure",
+    "poster": "badGuys2_poster.webp",
+    "logo": "badGuys2_logo.png",
+    "background": "badGuys2_back.jpg"
+  },
+  {
+    "id": 25,
+    "title": "Zootopia 2",
+    "description": "Judy Hopps and Nick Wilde return for another exciting investigation, facing fresh mysteries, surprising allies, and thrilling adventures that challenge their teamwork and determination once again.",
+    "year": "2025",
+    "type": "Comedy",
+    "poster": "zootopia2_poster.webp",
+    "logo": "zootopia2_logo.png",
+    "background": "zootopia2_back.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Kung Fu Panda 4",
+    "description": "A fresh adventure begins as Po embraces new responsibilities and faces powerful enemies, discovering that true leadership comes from wisdom, trust, and believing in others around him.",
+    "year": "2024",
+    "type": "Comedy",
+    "poster": "panda4_poster.webp",
+    "logo": "panda4_logo.png",
+    "background": "panda4_back.jpg"
+  },
+  {
+    "id": 34,
+    "title": "Inside Out 2",
+    "description": "As Riley grows older, new emotions arrive with unexpected challenges, creating another heartfelt adventure about change, identity, friendship, and understanding every feeling within us.",
+    "year": "2024",
+    "type": "Family",
+    "poster": "insideOut2_poster.webp",
+    "logo": "insideOut2_logo.png",
+    "background": "insideOut2_back.jpg"
+  },
+  {
+    "id": 28,
+    "title": "Elemental",
+    "description": "In a city where fire, water, earth, and air live together, two unlikely friends discover that understanding, kindness, and acceptance can overcome every difference between them.",
+    "year": "2023",
+    "type": "Family",
+    "poster": "elemental_poster.webp",
+    "logo": "elemental_logo.png",
+    "background": "elemental_back.jpg"
+  },
+  {
+    "id": 48,
+    "title": "Minions 3",
+    "description": "The mischievous Minions return for another action-packed adventure filled with laughter, surprising friendships, daring missions, and unforgettable moments that keep everyone smiling from start to finish.",
+    "year": "2026",
+    "type": "Kids",
+    "poster": "minions3_poster.webp",
+    "logo": "minions3_logo.png",
+    "background": "minions3_back.jpg"
+  },
+  {
+    "id": 45,
+    "title": "Luca",
+    "description": "A curious sea monster explores the beautiful Italian coast with his best friend, discovering freedom, friendship, and the courage to embrace who he truly is every day.",
+    "year": "2021",
+    "type": "Kids",
+    "poster": "luca_poster.webp",
+    "logo": "luca_logo.png",
+    "background": "luca_back.jpg"
+  },
+  {
+    "id": 29,
+    "title": "Encanto",
+    "description": "A magical family blessed with extraordinary gifts faces unexpected challenges as one determined girl discovers that love, hope, and unity are their greatest strengths of all.",
+    "year": "2021",
+    "type": "Family",
+    "poster": "encanto_poster.webp",
+    "logo": "encanto_logo.png",
+    "background": "encanto_back.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Puss in Boots: The Last Wish",
+    "description": "Facing his greatest challenge yet, Puss in Boots begins an extraordinary journey to reclaim hope, confront his fears, and discover what truly makes every adventure worth living.",
+    "year": "2022",
+    "type": "Adventure",
+    "poster": "pussBoots2_poster.webp",
+    "logo": "pussBoots2_logo.png",
+    "background": "pussBoots2_back.jpg"
+  },
+  {
+    "id": 1,
+    "title": "The Bad Guys",
+    "description": "A clever gang of notorious animal thieves attempts to change their reputation by becoming model citizens, but an unexpected mission challenges their loyalty, friendship, and every choice they make.",
+    "year": "2022",
+    "type": "Adventure",
+    "poster": "badGuys1_poster.webp",
+    "logo": "badGuys1_logo.png",
+    "background": "badGuys1_back.jpg"
+  }
+]
+}
+

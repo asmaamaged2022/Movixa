@@ -1,0 +1,173 @@
+@use "./variables" as *;
+@use "./mixin" as *;
+
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  background-color: $sceColor;
+  color: $firstColor;
+}
+.mainbtn {
+  text-decoration: none;
+  color: $firstColor;
+  background-color: $sceColor;
+  border: 2px solid $firstColor;
+  @include flex();
+  border-radius: 20px;
+  width: fit-content;
+  img {
+    width: 40px;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fed383;
+  border-radius: 10px;
+}
+.mainColor {
+  color: $firstColor;
+}
+//*used in top10,latest,Categories,search
+.header {
+  text-align: center;
+  position: relative;
+  span {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 50px;
+    @include respond(350) {
+      font-size: 30px;
+    }
+    @include respond(650) {
+      font-size: 40px;
+    }
+    text-shadow: 0 0 5px #f5f5dc;
+    &::after {
+      @include createEle($w: 50%, $h: 2px);
+      margin: auto;
+      background-color: $firstColor;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #f5f5dc;
+      transform: translateY(5px);
+    }
+  }
+  img {
+    width: 80px;
+  }
+  i {
+    @include position($t: 10px, $r: 30px);
+    @include respond(350){
+    @include position($t: 0px, $r: 10px);
+
+    }
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+//*used in top10,latest
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: $firstColor;
+    padding: 10px;
+    background-color: $sceColor;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    border: 2px solid $sceColor;
+  }
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background-color: $firstColor;
+    color: $sceColor;
+  }
+}
+
+//*used in top10,latest,Categories
+.movieCard {
+  background-position: center;
+  background-size: cover;
+  width: 270px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: default;
+  position: relative;
+  > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition-duration: 1s;
+  }
+  .layout {
+    @include distance($h: 100%);
+    @include position($t: 0, $l: 0);
+    opacity: 0;
+    transition-duration: 1s;
+    .info {
+      * {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      @include position($b: 20px, $l: 0);
+      .text {
+        .name {
+          font-size: 25px;
+          font-family: "Luckiest Guy", cursive;
+        }
+        font-size: 20px;
+        text-shadow: 0 0 5px $sceColor;
+      }
+    }
+  }
+  &:hover {
+    > img {
+      filter: brightness(60%) blur(3px);
+    }
+    .layout {
+      @include distance($h: 100%);
+      @include position($t: 0, $l: 0);
+      opacity: 1;
+      .info {
+        * {
+          transition-duration: 1s;
+          transform: translateY(0px);
+          opacity: 1;
+        }
+        .name {
+          transition-delay: 0.5s;
+        }
+        .year {
+          transition-delay: 0.6s;
+        }
+        .category {
+          transition-delay: 0.7s;
+        }
+        a {
+          transition-delay: 0.8s;
+        }
+      }
+    }
+  }
+}
+
+//* About us
+#About_Us {
+  .content {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 25px;
+    text-shadow: 0 0 5px $firstColor;
+    width: 75%;
+    @include respond(350) {
+      width: 100%;
+    }
+  }
+}

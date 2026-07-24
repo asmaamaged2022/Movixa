@@ -1,0 +1,545 @@
+{
+"AllMovies":[
+  {
+    "id": 1,
+    "title": "The Bad Guys",
+    "description": "A clever gang of notorious animal thieves attempts to change their reputation by becoming model citizens, but an unexpected mission challenges their loyalty, friendship, and every choice they make.",
+    "year": "2022",
+    "type": "Adventure",
+    "poster": "badGuys1_poster.webp",
+    "logo": "badGuys1_logo.png",
+    "background": "badGuys1_back.jpg"
+  },
+  {
+    "id": 2,
+    "title": "The Bad Guys 2",
+    "description": "The reformed crew is pulled into another thrilling adventure where fresh rivals, daring missions, and unexpected twists push their teamwork, courage, and trust to exciting new limits together.",
+    "year": "2025",
+    "type": "Adventure",
+    "poster": "badGuys2_poster.webp",
+    "logo": "badGuys2_logo.png",
+    "background": "badGuys2_back.jpg"
+  },
+  {
+    "id": 3,
+    "title": "The Croods",
+    "description": "A prehistoric family leaves the safety of their familiar cave to explore a colorful world filled with danger, discovery, and unforgettable adventures that reshape their future forever together.",
+    "year": "2013",
+    "type": "Adventure",
+    "poster": "croods1_poster.webp",
+    "logo": "croods1_logo.png",
+    "background": "croods1_back.jpg"
+  },
+  {
+    "id": 4,
+    "title": "The Croods: A New Age",
+    "description": "The adventurous Croods discover a new paradise and meet another family whose modern lifestyle sparks hilarious conflicts, surprising friendships, and exciting lessons about living together happily.",
+    "year": "2020",
+    "type": "Adventure",
+    "poster": "croods2_poster.webp",
+    "logo": "croods2_logo.png",
+    "background": "croods2_back.jpg"
+  },
+  {
+    "id": 5,
+    "title": "How to Train Your Dragon",
+    "description": "A young Viking forms an unlikely friendship with a mysterious dragon, changing the future of his village while discovering courage, compassion, and the true meaning of being a hero.",
+    "year": "2010",
+    "type": "Adventure",
+    "poster": "dragon1_poster.webp",
+    "logo": "dragon1_logo.png",
+    "background": "dragon1_back.jpg"
+  },
+  {
+    "id": 6,
+    "title": "How to Train Your Dragon 2",
+    "description": "As new dangers threaten the peace between dragons and humans, Hiccup embarks on an unforgettable journey filled with breathtaking discoveries, difficult choices, and powerful family connections.",
+    "year": "2014",
+    "type": "Adventure",
+    "poster": "dragon2_poster.webp",
+    "logo": "dragon2_logo.png",
+    "background": "dragon2_back.jpg"
+  },
+  {
+    "id": 7,
+    "title": "How to Train Your Dragon: The Hidden World",
+    "description": "Hiccup and Toothless face their greatest challenge as a mysterious hidden realm, powerful enemies, and life-changing decisions test their friendship and the future they hope to protect.",
+    "year": "2019",
+    "type": "Adventure",
+    "poster": "dragon3_poster.webp",
+    "logo": "dragon3_logo.png",
+    "background": "dragon3_back.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Epic",
+    "description": "A teenage girl is transported into a hidden forest kingdom where tiny heroes fight to protect nature, leading to an unforgettable adventure filled with bravery, friendship, and hope.",
+    "year": "2013",
+    "type": "Adventure",
+    "poster": "epic_poster.webp",
+    "logo": "epic_logo.png",
+    "background": "epic_back.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Puss in Boots",
+    "description": "The fearless and charming Puss in Boots sets out on a daring quest packed with legendary adventures, clever escapes, unforgettable allies, and thrilling battles that test his courage.",
+    "year": "2011",
+    "type": "Adventure",
+    "poster": "pussBoots1_poster.webp",
+    "logo": "pussBoots1_logo.png",
+    "background": "pussBoots1_back.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Puss in Boots: The Last Wish",
+    "description": "Facing his greatest challenge yet, Puss in Boots begins an extraordinary journey to reclaim hope, confront his fears, and discover what truly makes every adventure worth living.",
+    "year": "2022",
+    "type": "Adventure",
+    "poster": "pussBoots2_poster.webp",
+    "logo": "pussBoots2_logo.png",
+    "background": "pussBoots2_back.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Strange World",
+    "description": "A family of explorers ventures into a mysterious land filled with extraordinary creatures, incredible discoveries, and unexpected challenges that reveal the importance of unity and understanding.",
+    "year": "2022",
+    "type": "Adventure",
+    "poster": "strange_poster.webp",
+    "logo": "strange_logo.png",
+    "background": "strange_back.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Madagascar",
+    "description": "Four zoo animals unexpectedly find themselves stranded on a wild island, where hilarious adventures, unlikely friendships, and surprising discoveries change their lives forever together.",
+    "year": "2005",
+    "type": "Comedy",
+    "poster": "madagascar1_poster.webp",
+    "logo": "madagascar1_logo.png",
+    "background": "madagascar1_back.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Madagascar: Escape 2 Africa",
+    "description": "The lovable animal friends continue their exciting journey as they arrive in Africa, facing new adventures, family discoveries, and unforgettable moments that strengthen their remarkable bond.",
+    "year": "2008",
+    "type": "Comedy",
+    "poster": "madagascar2_poster.webp",
+    "logo": "madagascar2_logo.png",
+    "background": "madagascar2_back.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Monsters, Inc.",
+    "description": "Two friendly monsters discover an unexpected friendship with a human child, leading to heartwarming adventures that challenge everything they believe about fear, courage, and kindness.",
+    "year": "2001",
+    "type": "Comedy",
+    "poster": "monsters1_poster.webp",
+    "logo": "monsters1_logo.png",
+    "background": "monsters1_back.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Monsters University",
+    "description": "Before becoming legendary scare partners, two ambitious monsters navigate college life, fierce competition, and unexpected teamwork while learning the true meaning of friendship and success.",
+    "year": "2013",
+    "type": "Comedy",
+    "poster": "monsters2_poster.webp",
+    "logo": "monsters2_logo.png",
+    "background": "monsters2_back.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Kung Fu Panda",
+    "description": "An enthusiastic panda is unexpectedly chosen to become a legendary warrior, beginning an unforgettable adventure filled with courage, determination, friendship, and incredible martial arts battles.",
+    "year": "2008",
+    "type": "Comedy",
+    "poster": "panda1_poster.webp",
+    "logo": "panda1_logo.png",
+    "background": "panda1_back.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Kung Fu Panda 2",
+    "description": "Po continues his heroic journey as a dangerous new enemy threatens the valley, forcing him to uncover hidden truths while protecting everyone he cares about with courage.",
+    "year": "2011",
+    "type": "Comedy",
+    "poster": "panda2_poster.webp",
+    "logo": "panda2_logo.png",
+    "background": "panda2_back.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Kung Fu Panda 3",
+    "description": "Po discovers a long-lost family while preparing to face an unstoppable villain, balancing responsibility, friendship, and courage in a spectacular adventure full of heart and humor.",
+    "year": "2016",
+    "type": "Comedy",
+    "poster": "panda3_poster.webp",
+    "logo": "panda3_logo.png",
+    "background": "panda3_back.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Kung Fu Panda 4",
+    "description": "A fresh adventure begins as Po embraces new responsibilities and faces powerful enemies, discovering that true leadership comes from wisdom, trust, and believing in others around him.",
+    "year": "2024",
+    "type": "Comedy",
+    "poster": "panda4_poster.webp",
+    "logo": "panda4_logo.png",
+    "background": "panda4_back.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Shrek",
+    "description": "A grumpy but lovable ogre sets out on an unforgettable quest that leads to unlikely friendships, magical adventures, and surprising discoveries about love, acceptance, and true happiness.",
+    "year": "2001",
+    "type": "Comedy",
+    "poster": "shrek1_poster.webp",
+    "logo": "shrek1_logo.png",
+    "background": "shrek1_back.jpg"
+  },
+  {
+    "id": 21,
+    "title": "Shrek 2",
+    "description": "Shrek faces hilarious new challenges after meeting his wife's royal family, discovering that love, confidence, and staying true to yourself are the greatest adventures of all.",
+    "year": "2004",
+    "type": "Comedy",
+    "poster": "shrek2_poster.webp",
+    "logo": "shrek2_logo.png",
+    "background": "shrek2_back.jpg"
+  },
+  {
+    "id": 22,
+    "title": "Shrek the Third",
+    "description": "With the kingdom's future uncertain, Shrek embarks on another unforgettable journey where responsibility, friendship, and unexpected heroes create a hilarious and heartwarming adventure together.",
+    "year": "2007",
+    "type": "Comedy",
+    "poster": "shrek3_poster.webp",
+    "logo": "shrek3_logo.png",
+    "background": "shrek3_back.jpg"
+  },
+  {
+    "id": 23,
+    "title": "Shrek Forever After",
+    "description": "Shrek finds himself in a strange alternate reality where everything has changed, leading to an emotional adventure about family, love, and appreciating the life he already has.",
+    "year": "2010",
+    "type": "Comedy",
+    "poster": "shrek4_poster.webp",
+    "logo": "shrek4_logo.png",
+    "background": "shrek4_back.jpg"
+  },
+  {
+    "id": 24,
+    "title": "Zootopia",
+    "description": "A determined rookie rabbit police officer teams up with a clever fox to solve a mysterious case, uncovering unexpected truths while proving that anyone can achieve greatness.",
+    "year": "2016",
+    "type": "Comedy",
+    "poster": "zootopia1_poster.webp",
+    "logo": "zootopia1_logo.png",
+    "background": "zootopia1_back.jpg"
+  },
+  {
+    "id": 25,
+    "title": "Zootopia 2",
+    "description": "Judy Hopps and Nick Wilde return for another exciting investigation, facing fresh mysteries, surprising allies, and thrilling adventures that challenge their teamwork and determination once again.",
+    "year": "2025",
+    "type": "Comedy",
+    "poster": "zootopia2_poster.webp",
+    "logo": "zootopia2_logo.png",
+    "background": "zootopia2_back.jpg"
+  },
+  {
+    "id": 26,
+    "title": "Brave",
+    "description": "A fearless young princess challenges tradition and embarks on an unforgettable journey where courage, family, and unexpected magic shape her destiny in remarkable and inspiring ways.",
+    "year": "2012",
+    "type": "Family",
+    "poster": "brave_poster.webp",
+    "logo": "brave_logo.png",
+    "background": "brave_back.jpg"
+  },
+  {
+    "id": 27,
+    "title": "The Good Dinosaur",
+    "description": "A young dinosaur forms an unlikely friendship with a brave human boy, discovering courage, loyalty, and the strength to overcome fear through an unforgettable adventure together.",
+    "year": "2015",
+    "type": "Family",
+    "poster": "dinosaur_poster.webp",
+    "logo": "dinosaur_logo.png",
+    "background": "dinosaur_back.jpg"
+  },
+  {
+    "id": 28,
+    "title": "Elemental",
+    "description": "In a city where fire, water, earth, and air live together, two unlikely friends discover that understanding, kindness, and acceptance can overcome every difference between them.",
+    "year": "2023",
+    "type": "Family",
+    "poster": "elemental_poster.webp",
+    "logo": "elemental_logo.png",
+    "background": "elemental_back.jpg"
+  },
+  {
+    "id": 29,
+    "title": "Encanto",
+    "description": "A magical family blessed with extraordinary gifts faces unexpected challenges as one determined girl discovers that love, hope, and unity are their greatest strengths of all.",
+    "year": "2021",
+    "type": "Family",
+    "poster": "encanto_poster.webp",
+    "logo": "encanto_logo.png",
+    "background": "encanto_back.jpg"
+  },
+  {
+    "id": 30,
+    "title": "The Princess and the Frog",
+    "description": "A hardworking young woman finds herself on a magical adventure where dreams, friendship, and true love lead to unforgettable discoveries across a colorful and enchanting world.",
+    "year": "2009",
+    "type": "Family",
+    "poster": "frog_poster.webp",
+    "logo": "frog_logo.png",
+    "background": "frog_back.jpg"
+  },
+  {
+    "id": 31,
+    "title": "Frozen",
+    "description": "Two royal sisters embark on a breathtaking journey where love, courage, and hope help them overcome powerful magic while discovering the unbreakable bond that connects them forever.",
+    "year": "2013",
+    "type": "Family",
+    "poster": "frozen1_poster.webp",
+    "logo": "frozen1_logo.png",
+    "background": "frozen1_back.jpg"
+  },
+  {
+    "id": 32,
+    "title": "Frozen II",
+    "description": "Elsa and Anna travel beyond their kingdom to uncover ancient mysteries, facing magical challenges and emotional discoveries that forever change their future and strengthen their bond.",
+    "year": "2019",
+    "type": "Family",
+    "poster": "frozen2_poster.webp",
+    "logo": "frozen2_logo.png",
+    "background": "frozen2_back.jpg"
+  },
+  {
+    "id": 33,
+    "title": "Inside Out",
+    "description": "Inside a young girl's mind, her emotions work together through joyful and challenging moments, revealing how memories, feelings, and personal growth shape every important experience.",
+    "year": "2015",
+    "type": "Family",
+    "poster": "insideOut1_poster.webp",
+    "logo": "insideOut1_logo.png",
+    "background": "insideOut1_back.jpg"
+  },
+  {
+    "id": 34,
+    "title": "Inside Out 2",
+    "description": "As Riley grows older, new emotions arrive with unexpected challenges, creating another heartfelt adventure about change, identity, friendship, and understanding every feeling within us.",
+    "year": "2024",
+    "type": "Family",
+    "poster": "insideOut2_poster.webp",
+    "logo": "insideOut2_logo.png",
+    "background": "insideOut2_back.jpg"
+  },
+  {
+    "id": 35,
+    "title": "The Lion King",
+    "description": "A young lion prince begins an emotional journey of courage and self-discovery, learning the true meaning of responsibility, family, and embracing his rightful place in life.",
+    "year": "1994",
+    "type": "Family",
+    "poster": "lionKing_poster.webp",
+    "logo": "lionKing_logo.png",
+    "background": "lionKing_back.jpg"
+  },
+  {
+    "id": 36,
+    "title": "Soul",
+    "description": "A passionate musician unexpectedly explores the meaning of life through a remarkable adventure, discovering purpose, inspiration, and the small moments that make every day meaningful.",
+    "year": "2020",
+    "type": "Family",
+    "poster": "soul_poster.webp",
+    "logo": "soul_logo.png",
+    "background": "soul_back.jpg"
+  },
+  {
+    "id": 37,
+    "title": "Tangled",
+    "description": "A curious young princess leaves her hidden tower for an unforgettable adventure filled with friendship, discovery, courage, and the dream of finding her true place in life.",
+    "year": "2010",
+    "type": "Family",
+    "poster": "tangled_poster.webp",
+    "logo": "tangled_logo.png",
+    "background": "tangled_back.jpg"
+  },
+  {
+    "id": 38,
+    "title": "The Incredibles",
+    "description": "A family of undercover superheroes reunites to face an incredible threat, proving that teamwork, courage, and trusting one another can overcome even the greatest challenges together.",
+    "year": "2004",
+    "type": "Family",
+    "poster": "theIncredibles_poster.webp",
+    "logo": "theIncredibles_logo.png",
+    "background": "theIncredibles_back.jpg"
+  },
+  {
+    "id": 39,
+    "title": "Up",
+    "description": "An elderly dreamer and an adventurous young scout set off on an extraordinary journey where friendship, hope, and unforgettable discoveries prove that adventure can begin at any age.",
+    "year": "2009",
+    "type": "Family",
+    "poster": "up_poster.webp",
+    "logo": "up_logo.png",
+    "background": "up_back.jpg"
+  },
+  {
+    "id": 40,
+    "title": "WALL·E",
+    "description": "A lonely little robot discovers friendship and purpose while embarking on an unforgettable space adventure that reminds humanity of hope, love, and protecting the world they share.",
+    "year": "2008",
+    "type": "Family",
+    "poster": "wall_poster.webp",
+    "logo": "wall_logo.png",
+    "background": "wall_back.jpg"
+  },
+  {
+    "id": 41,
+    "title": "Cars",
+    "description": "A talented young race car discovers that true success comes through friendship, humility, and helping others while experiencing an unforgettable journey beyond the racetrack and fame.",
+    "year": "2006",
+    "type": "Kids",
+    "poster": "car_poster.webp",
+    "logo": "car_logo.png",
+    "background": "car_back.jpg"
+  },
+  {
+    "id": 42,
+    "title": "Coco",
+    "description": "A music-loving boy enters a magical world filled with unforgettable adventures, discovering the importance of family, memories, and following his dreams with courage and determination.",
+    "year": "2017",
+    "type": "Kids",
+    "poster": "coco_poster.webp",
+    "logo": "coco_logo.png",
+    "background": "coco_back.jpg"
+  },
+  {
+    "id": 43,
+    "title": "Finding Dory",
+    "description": "Dory begins an emotional journey across the ocean to uncover her past, finding friendship, family, and courage while overcoming every challenge that comes her way together.",
+    "year": "2016",
+    "type": "Kids",
+    "poster": "dory_poster.webp",
+    "logo": "dory_logo.png",
+    "background": "dory_back.jpg"
+  },
+  {
+    "id": 44,
+    "title": "The Grinch",
+    "description": "A grumpy but lonely creature plans to steal Christmas, only to discover that kindness, friendship, and the true holiday spirit can transform even the coldest heart.",
+    "year": "2018",
+    "type": "Kids",
+    "poster": "grinch_poster.webp",
+    "logo": "grinch_logo.png",
+    "background": "grinch_back.jpg"
+  },
+  {
+    "id": 45,
+    "title": "Luca",
+    "description": "A curious sea monster explores the beautiful Italian coast with his best friend, discovering freedom, friendship, and the courage to embrace who he truly is every day.",
+    "year": "2021",
+    "type": "Kids",
+    "poster": "luca_poster.webp",
+    "logo": "luca_logo.png",
+    "background": "luca_back.jpg"
+  },
+  {
+    "id": 46,
+    "title": "Minions",
+    "description": "The lovable yellow Minions set out on a hilarious adventure packed with unexpected challenges, unforgettable friendships, and endless laughter while searching for the perfect leader together.",
+    "year": "2015",
+    "type": "Kids",
+    "poster": "minions1_poster.webp",
+    "logo": "minions1_logo.png",
+    "background": "minions1_back.jpg"
+  },
+  {
+    "id": 47,
+    "title": "Minions: The Rise of Gru",
+    "description": "Young Gru joins forces with his loyal Minions in an exciting adventure where bravery, teamwork, and clever ideas help them overcome powerful enemies and impossible situations together.",
+    "year": "2022",
+    "type": "Kids",
+    "poster": "minions2_poster.webp",
+    "logo": "minions2_logo.png",
+    "background": "minions2_back.jpg"
+  },
+  {
+    "id": 48,
+    "title": "Minions 3",
+    "description": "The mischievous Minions return for another action-packed adventure filled with laughter, surprising friendships, daring missions, and unforgettable moments that keep everyone smiling from start to finish.",
+    "year": "2026",
+    "type": "Kids",
+    "poster": "minions3_poster.webp",
+    "logo": "minions3_logo.png",
+    "background": "minions3_back.jpg"
+  },
+  {
+    "id": 49,
+    "title": "Finding Nemo",
+    "description": "A devoted father crosses the vast ocean on an unforgettable adventure, discovering courage, friendship, and hope while searching for the son he loves more than anything.",
+    "year": "2003",
+    "type": "Kids",
+    "poster": "nemo_poster.webp",
+    "logo": "nemo_logo.png",
+    "background": "nemo_back.jpg"
+  },
+  {
+    "id": 50,
+    "title": "Puss in Boots",
+    "description": "The fearless and charming Puss in Boots embarks on another legendary adventure filled with daring escapes, clever plans, loyal friends, and unforgettable moments of bravery and humor.",
+    "year": "2011",
+    "type": "Kids",
+    "poster": "pussBoots_poster.webp",
+    "logo": "pussBoots_logo.png",
+    "background": "pussBoots_back.jpg"
+  },
+  {
+    "id": 51,
+    "title": "Toy Story",
+    "description": "A group of beloved toys comes to life whenever humans are away, sharing unforgettable adventures that celebrate friendship, loyalty, courage, and the joy of growing together.",
+    "year": "1995",
+    "type": "Kids",
+    "poster": "toy1_poster.webp",
+    "logo": "toy1_logo.png",
+    "background": "toy1_back.jpg"
+  },
+  {
+    "id": 52,
+    "title": "Toy Story 2",
+    "description": "Woody and his loyal friends set out on another exciting rescue mission, discovering that friendship, trust, and staying together matter more than anything else in life.",
+    "year": "1999",
+    "type": "Kids",
+    "poster": "toy2_poster.webp",
+    "logo": "toy2_logo.png",
+    "background": "toy2_back.jpg"
+  },
+  {
+    "id": 53,
+    "title": "Toy Story 3",
+    "description": "As their owner prepares for a new chapter, the beloved toys face unexpected adventures that strengthen their friendship and remind them of the importance of never giving up.",
+    "year": "2010",
+    "type": "Kids",
+    "poster": "toy3_poster.webp",
+    "logo": "toy3_logo.png",
+    "background": "toy3_back.jpg"
+  },
+  {
+    "id": 54,
+    "title": "Toy Story 4",
+    "description": "Woody begins a heartfelt new adventure that challenges his purpose, leading to unforgettable discoveries about friendship, loyalty, freedom, and embracing the future with confidence and hope.",
+    "year": "2019",
+    "type": "Kids",
+    "poster": "toy4_poster.webp",
+    "logo": "toy4_logo.png",
+    "background": "toy4_back.jpg"
+  }
+]
+
+}

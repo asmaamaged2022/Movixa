@@ -1,0 +1,27 @@
+@use "../abstracts/index" as *;
+#Categories {
+  .content {
+    ul.nav-tabs {
+      border: 0px;
+      @include flex;
+      li {
+        button {
+          border-bottom-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+          transition-duration: 0.5s;
+          &.active {
+            background-color: $firstColor;
+            color: $sceColor;
+            border: 0px;
+            outline: 0px;
+          }
+          background-color: transparent;
+          color: $firstColor;
+          border: none;
+        }
+      }
+    }
+  }
+}
