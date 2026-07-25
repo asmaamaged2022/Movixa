@@ -298,10 +298,6 @@ GitHub
 
 https://github.com/asmaamaged2022
 
-Portfolio
-
-https://asmaamaged2022.github.io/Asmaa-portfolio/
-
 ---
 
 # ⭐ Support
