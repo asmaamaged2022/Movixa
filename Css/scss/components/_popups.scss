@@ -28,7 +28,8 @@
     }
   }
   &[data-type="Search"],
-  &[data-type="contact"] {
+  &[data-type="contact"],
+  &[data-type="login"] {
     input,
     textarea {
       color: $firstColor;
@@ -37,6 +38,9 @@
       outline: none;
       border-radius: 20px;
       border-bottom: 1px solid $firstColor;
+      &:focus {
+        box-shadow: none;
+      }
       &::placeholder {
         color: $firstColor;
       }
@@ -59,16 +63,59 @@
   }
   &[data-type="contact"] {
     @include flex;
-
     .box {
       width: 320px;
+      position: relative;
       form {
         input,
         textarea {
           border: 1px solid $firstColor;
           resize: none;
-          &:focus {
-            box-shadow: none;
+        }
+      }
+      i {
+        @include position($t: 10px, $r: 20px);
+        cursor: pointer;
+      }
+    }
+  }
+
+  &[data-type="login"] {
+    .box1,
+    .box2 {
+      border: 1px solid $firstColor;
+      @include position($t: 50%, $l: 50%);
+      transform: translate(-50%, calc(-50% + 30px));
+      opacity: 0;
+      transition-duration: 1s;
+      border-radius: 20px;
+      width: 320px;
+      form {
+        input {
+          border: 1px solid $firstColor;
+        }
+        z-index: 0;
+      }
+      &.show {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        z-index: 2;
+      }
+      .content {
+        position: relative;
+        i {
+          @include position($t: 10px, $r: 20px);
+          cursor: pointer;
+        }
+      }
+    }
+    .box1 {
+      .contact-box {
+        > button {
+          background-color: transparent;
+          border: none;
+          &:hover {
+            text-shadow: 0 0 5px $firstColor;
           }
         }
       }

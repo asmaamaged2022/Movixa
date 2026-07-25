@@ -604,6 +604,20 @@ nav.navbar .container .icons span:hover {
     width: 80%;
   }
 }
+.MoviePage .relatedMovies {
+  font-family: "Luckiest Guy", cursive;
+  text-shadow: 0 0 5px #f5f5dc;
+}
+
+.owl-carousel .item .movieCard .info {
+  display: block;
+}
+.owl-carousel .item .movieCard {
+  border: 2px solid #f5deb2;
+}
+.owl-carousel .item .movieCard .mainbtn img {
+  width: 40px;
+}
 
 .popup {
   position: fixed;
@@ -634,7 +648,8 @@ nav.navbar .container .icons span:hover {
 }
 .popup[data-type=Search] input,
 .popup[data-type=Search] textarea, .popup[data-type=contact] input,
-.popup[data-type=contact] textarea {
+.popup[data-type=contact] textarea, .popup[data-type=login] input,
+.popup[data-type=login] textarea {
   color: #f5deb2;
   background-color: transparent;
   border: none;
@@ -642,9 +657,16 @@ nav.navbar .container .icons span:hover {
   border-radius: 20px;
   border-bottom: 1px solid #f5deb2;
 }
+.popup[data-type=Search] input:focus,
+.popup[data-type=Search] textarea:focus, .popup[data-type=contact] input:focus,
+.popup[data-type=contact] textarea:focus, .popup[data-type=login] input:focus,
+.popup[data-type=login] textarea:focus {
+  box-shadow: none;
+}
 .popup[data-type=Search] input::placeholder,
 .popup[data-type=Search] textarea::placeholder, .popup[data-type=contact] input::placeholder,
-.popup[data-type=contact] textarea::placeholder {
+.popup[data-type=contact] textarea::placeholder, .popup[data-type=login] input::placeholder,
+.popup[data-type=login] textarea::placeholder {
   color: #f5deb2;
 }
 .popup[data-type=Search] input:-webkit-autofill, .popup[data-type=Search] input:-webkit-autofill:hover, .popup[data-type=Search] input:-webkit-autofill:focus, .popup[data-type=Search] input:-webkit-autofill:active,
@@ -655,7 +677,11 @@ nav.navbar .container .icons span:hover {
 .popup[data-type=contact] textarea:-webkit-autofill,
 .popup[data-type=contact] textarea:-webkit-autofill:hover,
 .popup[data-type=contact] textarea:-webkit-autofill:focus,
-.popup[data-type=contact] textarea:-webkit-autofill:active {
+.popup[data-type=contact] textarea:-webkit-autofill:active, .popup[data-type=login] input:-webkit-autofill, .popup[data-type=login] input:-webkit-autofill:hover, .popup[data-type=login] input:-webkit-autofill:focus, .popup[data-type=login] input:-webkit-autofill:active,
+.popup[data-type=login] textarea:-webkit-autofill,
+.popup[data-type=login] textarea:-webkit-autofill:hover,
+.popup[data-type=login] textarea:-webkit-autofill:focus,
+.popup[data-type=login] textarea:-webkit-autofill:active {
   -webkit-text-fill-color: #f5deb3 !important;
   -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
   box-shadow: 0 0 0px 1000px transparent inset !important;
@@ -673,15 +699,68 @@ nav.navbar .container .icons span:hover {
 }
 .popup[data-type=contact] .box {
   width: 320px;
+  position: relative;
 }
 .popup[data-type=contact] .box form input,
 .popup[data-type=contact] .box form textarea {
   border: 1px solid #f5deb2;
   resize: none;
 }
-.popup[data-type=contact] .box form input:focus,
-.popup[data-type=contact] .box form textarea:focus {
-  box-shadow: none;
+.popup[data-type=contact] .box i {
+  position: absolute;
+  top: 10px;
+  left: initial;
+  bottom: initial;
+  right: 20px;
+  cursor: pointer;
+}
+.popup[data-type=login] .box1,
+.popup[data-type=login] .box2 {
+  border: 1px solid #f5deb2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: initial;
+  right: initial;
+  transform: translate(-50%, calc(-50% + 30px));
+  opacity: 0;
+  transition-duration: 1s;
+  border-radius: 20px;
+  width: 320px;
+}
+.popup[data-type=login] .box1 form input,
+.popup[data-type=login] .box2 form input {
+  border: 1px solid #f5deb2;
+}
+.popup[data-type=login] .box1 form,
+.popup[data-type=login] .box2 form {
+  z-index: 0;
+}
+.popup[data-type=login] .box1.show,
+.popup[data-type=login] .box2.show {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  z-index: 2;
+}
+.popup[data-type=login] .box1 .content,
+.popup[data-type=login] .box2 .content {
+  position: relative;
+}
+.popup[data-type=login] .box1 .content i,
+.popup[data-type=login] .box2 .content i {
+  position: absolute;
+  top: 10px;
+  left: initial;
+  bottom: initial;
+  right: 20px;
+  cursor: pointer;
+}
+.popup[data-type=login] .box1 .contact-box > button {
+  background-color: transparent;
+  border: none;
+}
+.popup[data-type=login] .box1 .contact-box > button:hover {
+  text-shadow: 0 0 5px #f5deb2;
 }
 
 .loading {

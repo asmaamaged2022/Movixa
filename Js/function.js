@@ -84,14 +84,28 @@ function openPopup(type) {
       contactPopup.classList.add("show");
     }, 100);
   }
+  if (type == "login") {
+    loginPopup.classList.remove("d-none");
+    setTimeout(() => {
+      loginPopupBox1.classList.add("show");
+    }, 100);
+  }
+  if (type == "register") {
+    setTimeout(() => {
+      loginPopupBox1.classList.remove("show");
+      loginPopupBox2.classList.add("show");
+    }, 100);
+  }
 }
 globalPopupContent.forEach((item) => {
   item.addEventListener("click", (e) => {
     e.stopPropagation();
   });
 });
-
 function closePopup() {
+  loginPopupBox2.classList.remove("show");
+  loginPopupBox1.classList.remove("show");
+
   globalPopup.forEach((item) => {
     item.classList.remove("show");
   });
@@ -101,9 +115,8 @@ function closePopup() {
     });
     searchInput.value = "";
     printSearchPopupContent(allMovies);
-  }, 1000);
+  }, 500);
 }
-
 let timer;
 searchInput.addEventListener("input", () => {
   clearTimeout(timer);

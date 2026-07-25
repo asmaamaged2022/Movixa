@@ -7,11 +7,14 @@ let SwiperContent1 = document.querySelector(".mySwiper1 .swiper-wrapper"),
   contentRowAdventure = document.querySelector("#Categories .content .adventure .box"),
   categoryPopup = document.querySelector(`.popup[data-type="category"]`),
   globalPopup = document.querySelectorAll(".popup"),
-  globalPopupContent = document.querySelectorAll(".popup .box"),
+  globalPopupContent = document.querySelectorAll(".popup .box,.box1,.box2"),
   categoryPopupContent = document.querySelector(`.popup[data-type="category"] .box .content .row`),
   searchPopupContent = document.querySelector(`.popup[data-type="Search"] .box .content .row`),
   searchPopup = document.querySelector(`.popup[data-type="Search"]`),
   contactPopup = document.querySelector(`.popup[data-type="contact"]`),
+  loginPopup = document.querySelector(`.popup[data-type="login"]`),
+  loginPopupBox1 = document.querySelector(`.popup[data-type="login"] .box1`),
+  loginPopupBox2 = document.querySelector(`.popup[data-type="login"] .box2`),
   searchInput = document.querySelector("#search"),
   allMovies = [],
   Family = [],
@@ -19,7 +22,7 @@ let SwiperContent1 = document.querySelector(".mySwiper1 .swiper-wrapper"),
   Adventure = [],
   Comedy = [],
   loading = document.querySelector(".loading"),
-  body=document.querySelector("body");
+  body = document.querySelector("body");
 
 //* Latest swiper && Data
 (function () {
@@ -60,7 +63,7 @@ let SwiperContent1 = document.querySelector(".mySwiper1 .swiper-wrapper"),
       });
     });
 })();
-
+//* allMoviesData && loading Page
 Promise.all([
   fetch("https://asmaamaged2022.github.io/MovixaAPI/movies_All.json")
     .then((response) => response.json())
@@ -77,10 +80,9 @@ Promise.all([
   new Promise((resolve) => setTimeout(resolve, 3000)),
 ]).then(() => {
   loading.classList.remove("show");
- body.classList.remove("hiddenScroll");
+  body.classList.remove("hiddenScroll");
   setTimeout(() => {
     loading.classList.add("d-none");
-   
   }, 500);
 });
 //* Top10 swiper && Data
@@ -122,22 +124,6 @@ Promise.all([
     })
     .catch((error) => console.error(error));
 })();
-
-//* allMoviesData
-// (function () {
-//   fetch("https://asmaamaged2022.github.io/MovixaAPI/movies_All.json")
-//     .then((response) => response.json())
-//     .then((data) => {
-//       allMovies = data.AllMovies;
-//       contentRowAll.innerHTML = ``;
-//       for (let i = 0; i < 40; i += 5) {
-//         contentRowAll.innerHTML += `
-//         ${printMovieCardInCategories(data.AllMovies[i])}
-//         `;
-//       }
-//       printSearchPopupContent(allMovies);
-//     });
-// })();
 
 //* AdventureData
 (function () {

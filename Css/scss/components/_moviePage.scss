@@ -52,7 +52,7 @@
           position: initial;
         }
         @include respond(850) {
-          @include position($b: 0,$l: 0);
+          @include position($b: 0, $l: 0);
         }
         i {
           color: $firstColor;
@@ -72,6 +72,25 @@
     }
     @include respond(650) {
       width: 80%;
+    }
+  }
+  .relatedMovies {
+    font-family: "Luckiest Guy", cursive;
+    text-shadow: 0 0 5px #f5f5dc;
+  }
+}
+.owl-carousel {
+  .item {
+    .movieCard {
+      .info {
+        display: block;
+      }
+      border: 2px solid $firstColor;
+      .mainbtn {
+        img {
+          width: 40px;
+        }
+      }
     }
   }
 }

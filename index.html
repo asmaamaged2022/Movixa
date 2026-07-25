@@ -10,7 +10,7 @@
       property="og:description"
       content="Enjoy the world of animated movies with Movixa. Browse the latest releases, explore top picks, search your favorite cartoons, and discover movies in a modern, user-friendly experience."
     />
-<meta property="og:url" content="https://asmaamaged2022.github.io/Movixa/" />
+    <meta property="og:url" content="https://asmaamaged2022.github.io/Movixa/" />
     <meta property="og:image" content="https://asmaamaged2022.github.io/Movixa/images/logo.png" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Movixa" />
@@ -54,9 +54,9 @@
               <a class="nav-link mainColor" href="#About_Us">About Us</a>
             </li>
           </ul>
-          <div class="icons me-4 mb-lg-0 mb-3">
+          <div class="icons me-lg-4 mb-lg-0 mb-3">
             <span class="me-3"> <i class="fa-solid fa-magnifying-glass" onclick="openPopup('Search')"></i></span>
-            <span class="me-3"><i class="fa-solid fa-user"></i></span>
+            <span class="me-3"><i class="fa-solid fa-user" onclick="openPopup('login')"></i></span>
             <span><i class="fa-solid fa-envelope" onclick="openPopup('contact')"></i></span>
           </div>
         </div>
@@ -287,6 +287,8 @@
         <div class="content">
           <div class="container">
             <div class="contact-box text-center py-4 px-2">
+              <i class="fa-solid fa-xmark fa-beat" onclick="closePopup()"></i>
+
               <h2 class="mb-5">Contact Us</h2>
               <form class="w-100">
                 <div class="mb-3">
@@ -303,6 +305,55 @@
 
                 <button class="mainbtn px-3 py-1 mx-auto">Send Message</button>
               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup w-100 d-none" data-type="login" onclick="closePopup()">
+      <div class="item w-100 h-100 position-relative">
+        <div class="box1 mx-auto">
+          <div class="content">
+            <div class="container">
+              <div class="contact-box text-center py-4 px-2">
+                <i class="fa-solid fa-xmark fa-beat" onclick="closePopup()"></i>
+                <h2 class="mb-5">Log In</h2>
+                <form class="w-100">
+                  <div class="mb-3">
+                    <input type="text" class="form-control px-4 py-2" placeholder="Your Name" />
+                  </div>
+
+                  <div class="mb-4">
+                    <input type="password" class="form-control px-4 py-2" placeholder="Your Password" />
+                  </div>
+
+                  <button class="mainbtn px-3 py-1 mx-auto">Send</button>
+                </form>
+
+                <button class="mainColor mt-5"><span onclick="openPopup('register')"> Create New Account</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box2 mx-auto">
+          <div class="content">
+            <div class="container">
+              <div class="contact-box text-center py-4 px-2">
+                <i class="fa-solid fa-xmark fa-beat" onclick="closePopup()"></i>
+                <h2 class="mb-5">Registration</h2>
+                <form class="w-100">
+                  <div class="mb-3">
+                    <input type="text" class="form-control px-4 py-2" placeholder="Your Name" />
+                  </div>
+                  <div class="mb-3">
+                    <input type="email" class="form-control px-4 py-2" placeholder="Your Email" />
+                  </div>
+                  <div class="mb-3">
+                    <input type="password" class="form-control px-4 py-2" placeholder="Your Password" />
+                  </div>
+                  <button class="mainbtn px-3 py-1 mx-auto">Send</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -333,6 +384,7 @@
     </div>
     <script src="Js/plugins/bootstrap.js"></script>
     <script src="Js/plugins/swiper.js"></script>
+   
     <script src="Js/index.js"></script>
     <script src="Js/function.js"></script>
   </body>
