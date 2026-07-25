@@ -290,20 +290,6 @@ No installation or additional packages are required.
 
 ---
 
-# 🚧 Future Improvements
-
-- Add User Authentication
-- Favorites List
-- Watch Later
-- Movie Ratings
-- Backend Integration
-- Database Support
-- Real Movie API Integration
-- Dark / Light Theme
-- User Profiles
-
----
-
 # 👩‍💻 Author
 
 **Asmaa Maged**
