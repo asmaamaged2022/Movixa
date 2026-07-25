@@ -6,6 +6,9 @@ body {
   position: relative;
   background-color: $sceColor;
   color: $firstColor;
+  &.hiddenScroll{
+    overflow: hidden;
+  }
 }
 .mainbtn {
   text-decoration: none;
@@ -35,6 +38,11 @@ body {
   color: $firstColor;
 }
 //*used in top10,latest,Categories,search
+section
+,header
+ {
+    scroll-margin-top: 80px;
+}
 .header {
   text-align: center;
   position: relative;

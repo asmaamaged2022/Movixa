@@ -17,7 +17,9 @@ let SwiperContent1 = document.querySelector(".mySwiper1 .swiper-wrapper"),
   Family = [],
   Kids = [],
   Adventure = [],
-  Comedy = [];
+  Comedy = [],
+  loading = document.querySelector(".loading"),
+  body=document.querySelector("body");
 
 //* Latest swiper && Data
 (function () {
@@ -59,6 +61,28 @@ let SwiperContent1 = document.querySelector(".mySwiper1 .swiper-wrapper"),
     });
 })();
 
+Promise.all([
+  fetch("https://asmaamaged2022.github.io/MovixaAPI/movies_All.json")
+    .then((response) => response.json())
+    .then((data) => {
+      allMovies = data.AllMovies;
+      contentRowAll.innerHTML = "";
+      for (let i = 0; i < 40; i += 5) {
+        contentRowAll.innerHTML += printMovieCardInCategories(data.AllMovies[i]);
+      }
+
+      printSearchPopupContent(allMovies);
+    }),
+
+  new Promise((resolve) => setTimeout(resolve, 3000)),
+]).then(() => {
+  loading.classList.remove("show");
+ body.classList.remove("hiddenScroll");
+  setTimeout(() => {
+    loading.classList.add("d-none");
+   
+  }, 500);
+});
 //* Top10 swiper && Data
 (function () {
   fetch("https://asmaamaged2022.github.io/MovixaAPI/top10.json")
@@ -100,20 +124,20 @@ let SwiperContent1 = document.querySelector(".mySwiper1 .swiper-wrapper"),
 })();
 
 //* allMoviesData
-(function () {
-  fetch("https://asmaamaged2022.github.io/MovixaAPI/movies_All.json")
-    .then((response) => response.json())
-    .then((data) => {
-      allMovies = data.AllMovies;
-      contentRowAll.innerHTML = ``;
-      for (let i = 0; i < 40; i += 5) {
-        contentRowAll.innerHTML += `
-        ${printMovieCardInCategories(data.AllMovies[i])}
-        `;
-      }
-      printSearchPopupContent(allMovies);
-    });
-})();
+// (function () {
+//   fetch("https://asmaamaged2022.github.io/MovixaAPI/movies_All.json")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       allMovies = data.AllMovies;
+//       contentRowAll.innerHTML = ``;
+//       for (let i = 0; i < 40; i += 5) {
+//         contentRowAll.innerHTML += `
+//         ${printMovieCardInCategories(data.AllMovies[i])}
+//         `;
+//       }
+//       printSearchPopupContent(allMovies);
+//     });
+// })();
 
 //* AdventureData
 (function () {

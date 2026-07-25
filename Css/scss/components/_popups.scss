@@ -52,9 +52,14 @@
       }
     }
   }
+  &[data-type="Search"] {
+    .alert {
+      border-radius: 30px;
+    }
+  }
   &[data-type="contact"] {
     @include flex;
-    
+
     .box {
       width: 320px;
       form {
@@ -62,7 +67,7 @@
         textarea {
           border: 1px solid $firstColor;
           resize: none;
-          &:focus{
+          &:focus {
             box-shadow: none;
           }
         }

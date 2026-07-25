@@ -18,7 +18,7 @@ header {
       .image {
         @include background("../images/zootopia2_back.jpg");
         @include respond(350) {
-          @include background("../images/🐰🦊.jpg");
+          @include background("../images/zootopia2_respond.jpg");
         }
         @include respond(850) {
           @include background("../images/zootopia2_back.jpg");
@@ -29,7 +29,7 @@ header {
       .image {
         @include background("../images/dragon2_back.jpg");
         @include respond(350) {
-          @include background("../images/nemotest.jpg");
+          @include background("../images/nemorespond.jpg");
         }
         @include respond(850) {
           @include background("../images/dragon2_back.jpg");
@@ -40,7 +40,7 @@ header {
       .image {
         @include background("../images/toy1_back.jpg");
         @include respond(350) {
-          @include background("../images/toytest.jpg");
+          @include background("../images/toyrespond.jpg");
         }
         @include respond(850) {
           @include background("../images/toy1_back.jpg");
@@ -51,7 +51,7 @@ header {
       .image {
         @include background("../images/luca_back.jpg");
         @include respond(350) {
-          @include background("../images/luca_test.jpg");
+          @include background("../images/lucarespond.jpg");
         }
         @include respond(850) {
           @include background("../images/luca_back.jpg");
@@ -68,10 +68,10 @@ header {
           width: 100%;
         }
         @include respond(850) {
-           width: 80%;
+          width: 80%;
         }
-         @include respond(1050) {
-           width: 70%;
+        @include respond(1050) {
+          width: 70%;
         }
 
         color: black;

@@ -100,6 +100,7 @@ function closePopup() {
       item.classList.add("d-none");
     });
     searchInput.value = "";
+    printSearchPopupContent(allMovies);
   }, 1000);
 }
 
@@ -114,10 +115,17 @@ searchInput.addEventListener("input", () => {
 });
 function printSearchPopupContent(list) {
   searchPopupContent.innerHTML = ``;
-  searchPopupContent.innerHTML += ``;
-  list.forEach((element) => {
-    searchPopupContent.innerHTML += `
+  if (list.length > 0) {
+    list.forEach((element) => {
+      searchPopupContent.innerHTML += `
         ${printMovieCardInCategoriesPopup(element)}
         `;
-  });
+    });
+  } else {
+    searchPopupContent.innerHTML = `
+     <div class="alert mt-3 text-center alert-warning" role="alert">
+      Not Found!
+     </div>
+     `;
+  }
 }

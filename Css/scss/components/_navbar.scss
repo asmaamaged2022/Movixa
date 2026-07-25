@@ -52,6 +52,9 @@ nav {
         }
         li {
           a {
+            &:focus{
+              color: $firstColor;
+            }
             &::after {
               @include createEle($h: 2px);
               border-radius: 10px;

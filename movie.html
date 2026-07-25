@@ -10,9 +10,31 @@
     <link rel="stylesheet" href="Css/plugins/swiper.css" />
     <link rel="stylesheet" href="Css/styles.css" />
   </head>
-  <body>
+  <body class="hiddenScroll">
     <section class="MoviePage"></section>
-
+    <div class="loading show w-100 vh-100 d-flex justify-content-center align-items-center">
+      <div class="box">
+        <div class="btn-container">
+          <div style="--a: 0" class="btn-sensor sensor-n"></div>
+          <div style="--a: 45" class="btn-sensor sensor-ne"></div>
+          <div style="--a: 90" class="btn-sensor sensor-e"></div>
+          <div style="--a: 135" class="btn-sensor sensor-se"></div>
+          <div style="--a: 180" class="btn-sensor sensor-s"></div>
+          <div style="--a: 225" class="btn-sensor sensor-sw"></div>
+          <div style="--a: 270" class="btn-sensor sensor-w"></div>
+          <div style="--a: 315" class="btn-sensor sensor-nw"></div>
+          <button class="btn-button">
+            <div class="btn-lid"></div>
+            <div class="btn-pupil"></div>
+          </button>
+          <button class="btn-button">
+            <div class="btn-lid"></div>
+            <div class="btn-pupil"></div>
+          </button>
+          <div class="image mt-3 mx-auto"><img src="./Icon/loading.gif" alt="" class="img-fluid" /></div>
+        </div>
+      </div>
+    </div>
     <script src="Js/plugins/bootstrap.js"></script>
     <script src="Js/plugins/swiper.js"></script>
     <script src="Js/movies.js"></script>
