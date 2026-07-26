@@ -29,7 +29,7 @@ header {
       .image {
         @include background("../images/dragon2_back.jpg");
         @include respond(350) {
-          @include background("../images/nemorespond.jpg");
+          @include background("../images/dragon_respond.jpg");
         }
         @include respond(850) {
           @include background("../images/dragon2_back.jpg");
