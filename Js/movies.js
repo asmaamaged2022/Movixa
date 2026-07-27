@@ -131,6 +131,8 @@ function printOwlItem(movie) {
 }
 function goToMovie(id) {
   localStorage.setItem("movieId", id);
+ if (!localStorage.getItem("AllMovies")) {
   localStorage.setItem("AllMovies", JSON.stringify(allMovies));
+}
   window.location.href = "movie.html";
 }
