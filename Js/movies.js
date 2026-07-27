@@ -1,13 +1,11 @@
 let moviePage = document.querySelector(".MoviePage"),
   id = localStorage.getItem("movieId"),
+  allMovies = JSON.parse(localStorage.getItem("AllMovies")),
   loading = document.querySelector(".loading"),
   body = document.querySelector("body");
 
-Promise.all([
-  fetch("https://asmaamaged2022.github.io/MovixaAPI/movies_All.json").then((res) => res.json()),
-  new Promise((resolve) => setTimeout(resolve, 3000)),
-]).then(([data]) => {
-  let movie = data.AllMovies.find((item) => item.id == id);
+setTimeout(() => {
+  let movie = allMovies.find((item) => item.id == id);
 
   moviePage.innerHTML = `
     <div class="image w-100">
@@ -59,7 +57,7 @@ Promise.all([
   
     <div class="owl-carousel owl-theme mb-5">
     
-     ${printOwlItems(data.AllMovies, movie.type)}
+     ${printOwlItems(allMovies, movie.type)}
      </div>
   `;
   $(".owl-carousel").owlCarousel({
@@ -95,7 +93,7 @@ Promise.all([
   setTimeout(() => {
     loading.classList.add("d-none");
   }, 500);
-});
+}, 3000);
 function goHome() {
   window.location.replace("index.html#Categories");
 }

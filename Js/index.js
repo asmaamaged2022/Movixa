@@ -85,7 +85,7 @@ Promise.all([
     loading.classList.add("d-none");
   }, 500);
 });
-//* Top10 swiper && Data
+ //* Top10 swiper && Data
 (function () {
   fetch("https://asmaamaged2022.github.io/MovixaAPI/top10.json")
     .then((response) => response.json())

@@ -43,6 +43,7 @@ function printCategoryPopupContent(category, name) {
 }
 function goToMovie(id) {
   localStorage.setItem("movieId", id);
+  localStorage.setItem("AllMovies", JSON.stringify(allMovies));
   window.location.href = "movie.html";
 }
 function openPopup(type) {
