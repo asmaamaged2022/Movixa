@@ -70,20 +70,22 @@ Promise.all([
     .then((data) => {
       allMovies = data.AllMovies;
       contentRowAll.innerHTML = "";
+
       for (let i = 0; i < 40; i += 5) {
         contentRowAll.innerHTML += printMovieCardInCategories(data.AllMovies[i]);
       }
 
       printSearchPopupContent(allMovies);
     }),
-
-  new Promise((resolve) => setTimeout(resolve, 3000)),
 ]).then(() => {
-  loading.classList.remove("show");
-  body.classList.remove("hiddenScroll");
   setTimeout(() => {
-    loading.classList.add("d-none");
-  }, 500);
+    loading.classList.remove("show");
+    body.classList.remove("hiddenScroll");
+
+    setTimeout(() => {
+      loading.classList.add("d-none");
+    }, 500);
+  }, 3000);
 });
  //* Top10 swiper && Data
 (function () {
