@@ -690,6 +690,12 @@ nav.navbar .container .icons span:hover {
 }
 .popup[data-type=Search] .alert {
   border-radius: 30px;
+  width: 100%;
+}
+@media (max-width: 1300px) {
+  .popup[data-type=Search] .alert {
+    width: 95%;
+  }
 }
 .popup[data-type=contact] {
   display: flex;

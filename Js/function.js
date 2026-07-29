@@ -137,7 +137,7 @@ function printSearchPopupContent(list) {
     });
   } else {
     searchPopupContent.innerHTML = `
-     <div class="alert mt-3 text-center alert-warning" role="alert">
+     <div class="alert mt-3 mx-auto text-center alert-warning" role="alert">
       Not Found!
      </div>
      `;

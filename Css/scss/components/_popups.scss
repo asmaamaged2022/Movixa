@@ -59,6 +59,11 @@
   &[data-type="Search"] {
     .alert {
       border-radius: 30px;
+      width: 100% ;
+      @include respond(350){
+        width: 95%;
+      }
+    
     }
   }
   &[data-type="contact"] {
